@@ -7,28 +7,25 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <meta>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-
-
-
-<div class="header">
-  <a href="index.html" class="logo">ProVita</a>
-  <div class="header-right">
-    <a class="active" href="index.html">Naslovnica</a>
-    <a href="proizvodi.html">Proizvodi</a>
-    <a href="onama.html">O nama</a> 
-    <a href="kontakt.html">Kontakt</a>   
+  <div class="topnav" id="myTopnav">
+  <a style="" href="index.html" class="activ"><strong> ProVita</strong></a>
+    <a href="proizvodi.html">Proizvodi
+      
+    </a>
+  <a href="kontakt.html">Kontakt</a>
+  <a href="oudrugi.html">O udrugi</a>
+  <a href="podneblje.html">Podneblje</a>
+  <a href="faq.html">FAQ</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
   </div>
-</div>
-
-          
-        <div class="container">
-          
-          <div class="row">
+  <div class="container">
+    <div class="row">
             <div class="col-sm-12 text-center" >
               <h3>
               <p>Iz prekrasne ramske prirode, donosimo Vam</p>
@@ -43,21 +40,21 @@
               <h4><p>Ubrano i prerađeno u ramskom kraju, Hercegovačko-Bosanskom Raju!</p></h4>
             </div>
           </div>
-        
-        </div>
-<!--                                      foter koji se NE pojavljuje skrolom, i zauzima prostor stranice-->
-<div class="footer">
+  </div>
+  <div class="footer">
   +387 63 000 000 <br>
   mail@com<br>
   Uzdoljska BB<br>
-</div>
-
-
-
-
-
-
-
-
+  </div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </body>
 </html>
