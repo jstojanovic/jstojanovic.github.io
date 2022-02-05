@@ -62,14 +62,33 @@ body {
   color: white;
   text-align: center;
 }
-.col-sm-6 {
+.okvir-text{
 
   display: block;
   
   text-align: center;
-  padding: 64px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  padding: 0px 0px;
+
+}
+
+.okvir-slika {
+  padding: 100px 0px;
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 100px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
 }
 color: #f2f2f2;
     float: left;
+      text-decoration: none;
+  font-size: 17px;
+  background-image: url("photographer.jpg"); /* The image used */
+{
+
+  display: block;
+  
+  text-align: ;
+  padding: 200px 0px;
+ /* Resize the background image to cover the entire container */
+}
