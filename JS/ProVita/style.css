@@ -1,0 +1,10 @@
+.navbar{
+      
+        margin-bottom:0;
+        border-radius:0;
+
+      }
+.jumbotron{
+  background-image: url("slike/naslovna.webp"); 
+}
+position: fixed;

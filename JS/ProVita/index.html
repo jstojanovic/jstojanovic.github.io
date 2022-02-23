@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ProVita</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Naslovnica</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Proizvodi<span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Više o zadrugi ProVita <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- JUMBOTRON -->
+    <div class="jumbotron text-center">
+      <div style="color : lightgoldenrodyellow; text-shadow: 1px 1px 2px green;"class="container">
+        <h1>Mali zalogaj prirode.</h1>
+        <p>Priroda Tradicija Umijeće</p>
+        <a href="#" class="btn btn-primary">Saznaj više</a>
+      </div>
+    </div>
+
+<!-- TYPOGRAPHY -->
+    <div class="container">
+      <h1 class="page-header">U ponudi imamo: <small>Dobiveno tradicionalnom metodom, bez aditiva.</small></h1>
+      <p class="lead">
+        <a href="#">Sokovi: aronija, jabuka, jabukaMrkva, jabukaMrkvaCikla</a><br>
+        <a href="#">Pekmezi: divlji šipak, šljiva</a><br>
+        <a href="#">Ocat od divljih jabuka</a><br>
+        <a href="#">Borove iglice</a><br>
+
+      </p>
+
+      <p><mark>Proizvodi zadruge su izrađeni od domaćih autohotnih sorta voća, ručno ubranih plodova na području općine Rame u Bosni i Hercegovini.</mark></p>
+      <a><button class="btn btn-success">Saznaj više</button></a>
+<!--google map-->
+      <div id="googleMap" style="width:100%;height:400px;"></div>
+    <script>
+      function myMap() {
+      var mapProp= {
+        center:new google.maps.LatLng(51.508742,-0.120850),
+        zoom:5,
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
