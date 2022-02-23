@@ -20,25 +20,30 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Naslovnica</a>
+          <a class="navbar-brand" href="#"><img class="navbar-brand" src="LOGO_ProVita2.svg"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Proizvodi<span class="sr-only">(current)</span></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Proizvodi <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="sokovi.html">Sokovi</a></li>
+                <li><a href="pekmezi.html">Pekmezi</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="ostalo.html">Ostali proizvodi</a></li>
+                <li role="separator" class="divider"></li>
+                
+              </ul>
+            
             <li><a href="#">Kontakt</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Više o zadrugi ProVita <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
+                <li><a href="#">O zadrugi</a></li>
+                <li><a href="#">O podrijetlu</a></li>
+                </ul>
             </li>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -57,18 +62,30 @@
 <!-- TYPOGRAPHY -->
     <div class="container">
       <h1 class="page-header">U ponudi imamo: <small>Dobiveno tradicionalnom metodom, bez aditiva.</small></h1>
-      <p class="lead">
-        <a href="#">Sokovi: aronija, jabuka, jabukaMrkva, jabukaMrkvaCikla</a><br>
-        <a href="#">Pekmezi: divlji šipak, šljiva</a><br>
-        <a href="#">Ocat od divljih jabuka</a><br>
-        <a href="#">Borove iglice</a><br>
+      <p class="lead row">
+        <a href="#" class="col-sm-">Sokovi: </a>
+        <button class="btn btn-default col-sm-">aronija</button>
+        <button class="btn btn-default col-sm-">jabuka</button>
+        <button class="btn btn-default col-sm-">jabukaMrkva</button>
+        <button class="btn btn-default col-sm-">jabukaMrkvaCikla</button>
+        <br>
+        <a href="#">Pekmezi: </a>
+        <button class="btn btn-default">divlji šipak</button>
+        <button class="btn btn-default">šljiva</button><br>
+        <button class="btn btn-default">Ocat od divlje jabuke</button>
+        <button class="btn btn-default"><a href="#">Borove iglice</a></button>
+        <br>
 
       </p>
 
-      <p><mark>Proizvodi zadruge su izrađeni od domaćih autohotnih sorta voća, ručno ubranih plodova na području općine Rame u Bosni i Hercegovini.</mark></p>
+      <p><mark>Proizvodi zadruge su dobiveni od domaćih autohotnih sorta voća, plodova ubranih na području Rame u Bosni i Hercegovini.</mark></p>
+            <div id="googleMap" style="width:50%;height:200px;">
+              
+            </div><!--google map-->
+
       <a><button class="btn btn-success">Saznaj više</button></a>
-<!--google map-->
-      <div id="googleMap" style="width:100%;height:400px;"></div>
+
+      
     <script>
       function myMap() {
       var mapProp= {

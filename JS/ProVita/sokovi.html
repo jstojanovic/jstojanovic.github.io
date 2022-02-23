@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sokovi</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img class="navbar-brand" src="LOGO_ProVita2.svg"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Proizvodi <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="sokovi.html">Sokovi</a></li>
+                <li><a href="pekmezi.html">Pekmezi</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="ostalo.html">Ostali proizvodi</a></li>
+                <li role="separator" class="divider"></li>
+                
+              </ul>
+            
+            <li><a href="#">Kontakt</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Više o zadrugi ProVita <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">O zadrugi</a></li>
+                <li><a href="#">O podrijetlu</a></li>
+                </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- JUMBOTRON -->
+    <div class="jumbotron text-center">
+      <a href="#" class="btn btn-primary">Saznaj više</a>
+    </div>
+
+<!-- TYPOGRAPHY -->
+    <div class="container">
+      <h1 class="page-header">Maticni sokovi: <small></small></h1>
+      <p class="lead row">
+        <button class="btn btn-default col-sm-"><img src="ikonaaronija.svg">aronija</button>
+        <button class="btn btn-default col-sm-"><img src="ikonajabuka.svg">jabuka</button>
+        <button class="btn btn-default col-sm-"><img src="ikonajabukamrkva.svg">jabukaMrkva</button>
+        <button class="btn btn-default col-sm-"><img src="ikonajabukamrkvacikla.svg">jabukaMrkvaCikla</button>
+        <br>
+        
+      <a><button class="btn btn-success">Saznaj više</button></a>
+
+      
+    <script>
+      function myMap() {
+      var mapProp= {
+        center:new google.maps.LatLng(51.508742,-0.120850),
+        zoom:5,
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
