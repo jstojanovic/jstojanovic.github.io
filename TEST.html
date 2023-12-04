@@ -31,13 +31,13 @@
           </nav>
         </div>
       </header>
-
+<!-- 
       <main role="main" class="inner cover">
         <h1 class="cover-heading">Einfluss der mediterranen, balkanischen und österreichisch-ungarischen Küche</h1>
-        <p class="lead">mediterranen, balkanischen und österreichisch-ungarischen</p>
+        <p class="lead">*</p>
         <p class="lead">
           <a href="spaisekarte.html" class="btn btn-lg btn-secondary">See our offering</a>
-          <a href="scheduleMeal.html" class="btn btn-lg btn-outline-secondary">Set your selection</a>
+          <a href="pickup.html" class="btn btn-lg btn-outline-secondary">Set your selection</a>
         </p>
       </main>
 
@@ -45,7 +45,7 @@
         <div class="inner">
           <p>Lernen Sie <a href="https://getbootstrap.com/">die Aromen</a> kennen</p>
         </div>
-      </footer>
+      </footer> -->
     </div>
 
 
@@ -56,5 +56,43 @@
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="../../assets/js/vendor/popper.min.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
-  </body>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
 </html>
