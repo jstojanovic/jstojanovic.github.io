@@ -28,6 +28,10 @@ html,
 body {
   height: 100%;
   background-color: #333;
+  background-image: url('Ambience.png'); /* Replace 'path/to/your/image.jpg' with your image file path */
+  background-size: cover; /* This property ensures the background image covers the entire body */
+  /* You can adjust other properties like background-repeat, background-position, etc., based on your preferences */
+
 }
 
 body {
