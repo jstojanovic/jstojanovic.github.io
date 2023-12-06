@@ -28,9 +28,18 @@ html,
 body {
   height: 100%;
   background-color: #333;
-  background-image: url('Ambience.png'); /* Replace 'path/to/your/image.jpg' with your image file path */
+
+
+
+
+  background-image: url('Ambience.png');
   background-size: cover; /* This property ensures the background image covers the entire body */
-  /* You can adjust other properties like background-repeat, background-position, etc., based on your preferences */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-position: center; /* Centers the background image */
+/* 
+  background-image: url('Ambience.png'); /* Replace 'path/to/your/image.jpg' with your image file path 
+  background-size: cover; /* This property ensures the background image covers the entire body 
+  You can adjust other properties like background-repeat, background-position, etc., based on your preferences */
 
 }
 
