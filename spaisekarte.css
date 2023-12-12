@@ -1,12 +1,12 @@
-.disable-css {
-  /* Reset all styles or specific styles you want to disable */
-  all: initial; /* This resets all styles */
+/* .disable-css {
+  Reset all styles or specific styles you want to disable 
+  all: initial; /* This resets all styles 
   /* Or specific styles */
   /* For example: */
   /* display: initial; */
   /* margin: initial; */
-  /* ... (other styles you want to reset) */
-}
+  /* ... (other styles you want to reset) 
+} */
 
 
 
