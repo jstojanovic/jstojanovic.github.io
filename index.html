@@ -16,6 +16,20 @@
 
     <!-- Custom styles for this template -->
     <link href="index.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+    <style>
+      /* Add some basic styles for the container and text */
+      #myHeading {
+        position: relative;
+        display: inline-block;
+      }
+      .letter {
+        /* display: inline-block; */
+        /* transform-origin: center bottom; */
+        opacity: 0;
+      }
+    </style>
+
   </head>
 
   <body class="text-center content">
@@ -33,7 +47,7 @@
       </header>
 
       <main role="main" class="inner cover">
-        <h1 class="cover-heading outlined-text">Tolle Atmosphäre und riesiges Angebot</h1>
+        <h1 class="cover-heading outlined-text" id="myHeading">Tolle Atmosphäre und riesiges Angebot</h1>
         <p class="lead outlined-text">*   *   *   *   *</p>
         <p class="lead">
           <a href="spaisekarte.html" class="btn btn-lg btn-secondary">Eingeben</a>
@@ -47,6 +61,29 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      // Function to create a span element for each letter
+      function createLetterSpans(element) {
+        const text = element.innerText;
+        const letters = text.split('');
+        const spans = letters.map(letter => `<span class="letter">${letter}</span>`);
+        element.innerHTML = spans.join('');
+      }
+  
+      // Create letter spans for the specified heading
+      createLetterSpans(document.getElementById('myHeading'));
+  
+      // Anime.js animation
+      anime({
+        targets: '.letter',
+        translateY: [-20, 0],
+        opacity: [0, 1],
+        easing: 'easeOutQuad',
+        duration: 800,
+        delay: (el, i) => i * 50, // Adjust the delay for each letter
+      });
+    </script>
 
 
     <!-- Bootstrap core JavaScript
