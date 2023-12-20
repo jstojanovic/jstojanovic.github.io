@@ -8,8 +8,14 @@
   /* ... (other styles you want to reset) 
 } */
 
-
-
+/* padding prvog retka */
+.prvi_redak{
+  padding: 1%;
+}
+/* sakrij filtere druge razine */
+.filter_druge_razine{
+  display: none;
+}
 
  /* HEADER */
 
