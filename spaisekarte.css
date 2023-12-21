@@ -8,6 +8,11 @@
   /* ... (other styles you want to reset) 
 } */
 
+/*specijaliteti kuce*/
+.specijalitet-kuce{
+   /* display: none;  */
+}
+
 /* padding prvog retka */
 .prvi_redak{
   padding: 1%;
