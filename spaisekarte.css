@@ -9,10 +9,43 @@
 } */
 
 /*specijaliteti kuce*/
-.specijalitet-kuce{
-   /* display: none;  */
+/* .specijalitet-kuce{
+   display: none; 
 }
-
+.fishgerichte{
+  display: none; 
+}
+.kalte-vorspeisen{
+  display: none;
+}
+.warme-vorspeisen{
+  display: none;
+}
+.suppen{
+  display: none;
+}
+.pfannengerichte{
+  display: none;
+}
+.internationale-gerichte{
+  display: none;
+}
+.fertige-spaisen{
+  display: none;
+}
+.vom-rost{
+  display: none;
+}
+.beigalen{
+  display: none;
+}
+.salate{
+  display: none;
+}
+.desserts{
+  display: none;
+}
+.mittagkarte{display: none;} */
 /* padding prvog retka */
 .prvi_redak{
   padding: 1%;

@@ -65,7 +65,7 @@
         </div>
         
         <div class="row">
-          <div class="btn col-6 filter_druge_razine oznaka_jela"style="background-color: lightcoral;" >Specijaliteti kuće</div>
+          <div class="btn col-6 filter_druge_razine oznaka_jela " id="a_specijaliteti" style="background-color: lightcoral;" >Specijaliteti kuće</div>
           <div class="btn col-6 filter_druge_razine oznaka_jela" style="border-color:black;">Mittagskarte</div>
         </div>
 
@@ -565,7 +565,7 @@
 </div>
 <!-- Card 1: Orig. Bulgarischer Schafkäse -->
 <div class="col-md-4">
-  <div class="card mb-3 box-shadow kalte-vorspaisen">
+  <div class="card mb-3 box-shadow kalte-vorspeisen">
     <div style="padding: 0.9%">Orig. Bulgarischer Schafkäse</div> 
     <img class="card-img-top" src="example.png" alt="Card image cap">
     <div class="card-body">
@@ -583,7 +583,7 @@
 
 <!-- Card 2: Orig. Ungarische Salami -->
 <div class="col-md-4">
-  <div class="card mb-3 box-shadow kalte-vorspaisen">
+  <div class="card mb-3 box-shadow kalte-vorspeisen">
     <div style="padding: 0.9%">Orig. Ungarische Salami</div> 
     <img class="card-img-top" src="example.png" alt="Card image cap">
     <div class="card-body">
@@ -601,7 +601,7 @@
 
 <!-- Card 3: Gebackener Camembert -->
 <div class="col-md-4">
-  <div class="card mb-3 box-shadow kalte-vorspaisen">
+  <div class="card mb-3 box-shadow kalte-vorspeisen">
     <div style="padding: 0.9%">Gebackener Camembert</div> 
     <img class="card-img-top" src="example.png" alt="Card image cap">
     <div class="card-body">
@@ -684,7 +684,7 @@
   </div>
 </div>
 <div class="col-md-4">
-  <div class="card mb-3 box-shadow warme-vorspaisen">
+  <div class="card mb-3 box-shadow warme-vorspeisen">
       <div style="padding: 0.9%">Omelette mit magerer Kochschinken</div> 
       <img class="card-img-top" src="example.png" alt="Card image cap">
       <div class="card-body">
@@ -701,7 +701,7 @@
 </div>
 
 <div class="col-md-4">
-  <div class="card mb-3 box-shadow warme-vorspaisen">
+  <div class="card mb-3 box-shadow warme-vorspeisen">
       <div style="padding: 0.9%">Gebackener Camembert mit Preiselbeeren und Birne</div> 
       <img class="card-img-top" src="example.png" alt="Card image cap">
       <div class="card-body">
@@ -717,7 +717,7 @@
   </div>
 </div>
 <div class="col-md-4">
-  <div class="card mb-3 box-shadow warme-vorspaisen">
+  <div class="card mb-3 box-shadow warme-vorspeisen">
       <div style="padding: 0.9%">Omelette mit magerer Kochschinken</div> 
       <img class="card-img-top" src="example.png" alt="Card image cap">
       <div class="card-body">
@@ -734,7 +734,7 @@
 </div>
 
 <div class="col-md-4">
-  <div class="card mb-3 box-shadow warme-vorspaisen">
+  <div class="card mb-3 box-shadow warme-vorspeisen">
       <div style="padding: 0.9%">Gebackener Camembert mit Preiselbeeren und Birne</div> 
       <img class="card-img-top" src="example.png" alt="Card image cap">
       <div class="card-body">
@@ -2362,8 +2362,50 @@
       
       jela = document.getElementsByClassName('oznaka_jela');
       pice = document.getElementsByClassName('oznaka_pica');
-      dugme_aktiviraj_jela = document.getElementById('aktiviraj_jela');
+
+      specijaliteti = document.getElementsByClassName('specijalitet-kuce');
+      fishgerichte = document.getElementsByClassName('fishgerichte');
+      kalte_vorspeisen = document.getElementsByClassName('kalte-vorspeisen');
+      warme_vorspeisen = document.getElementsByClassName('warme-vorspeisen');
+      suppen = document.getElementsByClassName('suppen');
+      pfannengerichte = document.getElementsByClassName('pfannengerichte');
+      internationale_gerichte = document.getElementsByClassName('internationale-gerichte');
+      fertige_spaisen = document.getElementsByClassName('fertige-spaisen');
+      vom_rost = document.getElementsByClassName('vom-rost');
+      beigalen = document.getElementsByClassName('beigalen');
+      salate = document.getElementsByClassName('salate');
+      desserts = document.getElementsByClassName('desserts');
+      mittagkarte = document.getElementsByClassName('mittagkarte');
       
+
+      dugme_aktiviraj_jela = document.getElementById('aktiviraj_jela');
+      // Pića su direktno pozvana
+      dugme_specijaliteti = document.getElementById('a_specijaliteti');
+
+      
+      
+      dugme_specijaliteti.addEventListener('click', function() {
+        // dugme_aktiviraj_jela.style = 'border-color: red'
+        for (var i = 0; i < specijaliteti.length; i++)
+        {
+          specijaliteti[i].style.display = 'block'
+          fishgerichte.forEach(element => {element.style.display = 'none'})
+          kalte_vorspeisen.forEach(element => {element.style.display = 'none'})
+          warme_vorspeisen.forEach(element => {element.style.display = 'none'})
+          suppen.forEach(element => {element.style.display = 'none'})
+          pfannengerichte.forEach(element => {element.style.display = 'none'})
+          internationale_gerichte.forEach(element => {element.style.display = 'none'})
+          fertige_spaisen.forEach(element => {element.style.display = 'none'})
+          vom_rost.forEach(element => {element.style.display = 'none'})
+          beigalen.forEach(element => {element.style.display = 'none'})
+          salate.forEach(element => {element.style.display = 'none'})
+          desserts.forEach(element => {element.style.display = 'none'})
+          mittagkarte.forEach(element => {element.style.display = 'none'})
+          
+        }
+      });
+
+
       dugme_aktiviraj_jela.addEventListener('click', function() {
         // dugme_aktiviraj_jela.style = 'border-color: red'
         for (var i = 0; i < jela.length; i++)
