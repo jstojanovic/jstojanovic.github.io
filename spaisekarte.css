@@ -1,60 +1,8 @@
-/* .disable-css {
-  Reset all styles or specific styles you want to disable 
-  all: initial; /* This resets all styles 
-  /* Or specific styles */
-  /* For example: */
-  /* display: initial; */
-  /* margin: initial; */
-  /* ... (other styles you want to reset) 
-} */
 
-/*specijaliteti kuce*/
-/* .specijalitet-kuce{
-   display: none; 
+.btn {
+  background-color: goldenrod;
+  border-color: black;
 }
-.fishgerichte{
-  display: none; 
-}
-.kalte-vorspeisen{
-  display: none;
-}
-.warme-vorspeisen{
-  display: none;
-}
-.suppen{
-  display: none;
-}
-.pfannengerichte{
-  display: none;
-}
-.internationale-gerichte{
-  display: none;
-}
-.fertige-spaisen{
-  display: none;
-}
-.vom-rost{
-  display: none;
-}
-.beigalen{
-  display: none;
-}
-.salate{
-  display: none;
-}
-.desserts{
-  display: none;
-}
-.mittagkarte{display: none;} */
-/* padding prvog retka */
-.prvi_redak{
-  padding: 1%;
-}
-/* sakrij filtere druge razine */
-.filter_druge_razine{
-  display: none;
-}
-
  /* HEADER */
 
  .spaisekarte-container {

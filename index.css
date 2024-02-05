@@ -1,4 +1,15 @@
 
+.sec_btn_whitesmoke {
+  color: whitesmoke;
+  border-color: whitesmoke;
+  margin-bottom: 3%;
+}
+.sec_btn_whitesmoke:hover, 
+.sec_btn_whitesmoke:focus {
+  background-color: #33333385;
+  color: #333;
+  text-shadow: none;
+}
 .outlined-text {
   /* font-size: 40px; */
   /* font-weight: bold; */
@@ -20,16 +31,22 @@ a:focus,
 a:hover {
   color: #fff;
 }
-
 /* Custom default button */
-.btn-secondary,
+.btn-secondary {
+  margin-bottom: 3%;
+  color: #333;
+  text-shadow: none;  /*Prevent inheritance from `body`*/ 
+  background-color: whitesmoke;
+  border: .05rem solid #fff;
+}
 .btn-secondary:hover,
 .btn-secondary:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
+  text-shadow: none;  /*Prevent inheritance from `body`*/ 
+  background-color: transparent;
+  border: .05rem solid #333;
 }
+
 
 
 /*
