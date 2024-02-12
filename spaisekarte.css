@@ -51,7 +51,7 @@
 
 
 :root {
-  --jumbotron-padding-y: 3rem;
+  --jumbotron-padding-y: 0.5em;
 }
 
 .jumbotron {

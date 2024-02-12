@@ -5,4 +5,5 @@ predjela_sva = document.getElementById('predjela_sva')
 
 btn_predjela.addEventListener('click', function() {
     predjela_sva.style.display = 'block'
+    btn_predjela.style.display = 'none'
 })
