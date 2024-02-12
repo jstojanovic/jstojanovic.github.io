@@ -1,19 +1,37 @@
 
 .sec_btn_whitesmoke {
-  color: whitesmoke;
-  border-color: whitesmoke;
+  color: #d4d3d3;
+  border-color: #b5b5b5;
   margin-bottom: 3%;
 }
 .sec_btn_whitesmoke:hover, 
 .sec_btn_whitesmoke:focus {
   background-color: #33333385;
-  color: #333;
+  color: #d4d3d3;
   text-shadow: none;
 }
+
+/* Custom default button */
+.btn-secondary {
+  margin-bottom: 3%;
+  color: #b5b5b5;
+  text-shadow: none;  /*Prevent inheritance from `body`*/ 
+  background-color: #1d1d1d;
+  border: .05rem solid #b5b5b5;
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #d4d3d3;
+  text-shadow: none;  /*Prevent inheritance from `body`*/ 
+  background-color: #33333385;
+  border: .05rem solid #333;
+}
+
 .outlined-text {
   /* font-size: 40px; */
   /* font-weight: bold; */
-  /* color: white; Text color */
+  color: #e9e7e7;
+;
   text-shadow: 
     -1px -1px 0 #333,  
     1px -1px 0 #333,
@@ -31,21 +49,7 @@ a:focus,
 a:hover {
   color: #fff;
 }
-/* Custom default button */
-.btn-secondary {
-  margin-bottom: 3%;
-  color: #333;
-  text-shadow: none;  /*Prevent inheritance from `body`*/ 
-  background-color: whitesmoke;
-  border: .05rem solid #fff;
-}
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none;  /*Prevent inheritance from `body`*/ 
-  background-color: transparent;
-  border: .05rem solid #333;
-}
+
 
 
 
@@ -57,9 +61,6 @@ html,
 body {
   height: 100%;
   background-color: rgb(51, 51, 51);
-
-
-
 
   background-image: url('Ambience.png');
   background-size: cover; /* This property ensures the background image covers the entire body */
@@ -118,8 +119,8 @@ body {
 }
 
 .nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
+  color: #e9e7e7;
+  border-bottom-color: #e9e7e7;
 }
 
 @media (min-width: 48em) {

@@ -1,8 +1,8 @@
-
-.btn {
-  background-color: goldenrod;
-  border-color: black;
+#predjela_sva{
+  display: none;
 }
+
+
  /* HEADER */
 
  .spaisekarte-container {
@@ -47,6 +47,7 @@
     float: right;
   }
 }
+/*End of Header css*/
 
 
 :root {
