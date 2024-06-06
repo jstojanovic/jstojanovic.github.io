@@ -1,4 +1,16 @@
+// MEALS DATA
+// Order of data determines UI
+const categories = [];
+const all_meals = [{name: "z", desc: "x", price: 7.34, category: "schnitzel"}, {name: "z", desc: "x", price: 7.34, category: "schnitzel"} ];
 
+// Create menu buttons
+// add decorations
+// Add event listeners
+
+
+
+
+// Old implementation bellow
 // Buttons  
 vorspeisen_btn =    document.getElementById('vorspeisen_');
 vom_rost_btn =      document.getElementById('vom_rost_');
